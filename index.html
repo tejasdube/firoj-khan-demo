@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firoj Khan | Asclepius Wellness – Health & Wellness Products</title>
+<meta name="description" content="Firoj Khan – Asclepius Wellness distributor. Health & wellness products, SNISS Herbal personal care and WellRoot juices. Call or WhatsApp 9838856672 for details.">
+<style>
+:root{
+  --green:#1f6b3a; --green-d:#134a28; --green-l:#e8f4ec;
+  --gold:#c99a2e; --gold-l:#f6e7bd;
+  --ink:#1b2a22; --muted:#5d6b63; --bg:#fbfaf5; --card:#ffffff;
+  --radius:18px; --shadow:0 10px 30px rgba(19,74,40,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,'Noto Sans Devanagari',sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{width:min(1140px,92%);margin-inline:auto}
+section{padding:72px 0}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-bottom:10px}
+h1,h2,h3{line-height:1.2;color:var(--green-d)}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:12px}
+.lead{color:var(--muted);max-width:640px}
+.center{text-align:center}.center .lead{margin-inline:auto}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:999px;font-weight:700;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:.2s;font-family:inherit}
+.btn-primary{background:var(--gold);color:#2a1d00}
+.btn-primary:hover{background:#b3871f;transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{background:#1ebe5a;transform:translateY(-2px)}
+.btn-outline{border-color:#fff;color:#fff}
+.btn-outline:hover{background:#fff;color:var(--green-d)}
+
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(0,0,0,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--green-d)}
+.brand .logo{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green-d));display:grid;place-items:center;color:var(--gold-l);font-size:1.2rem}
+.brand small{display:block;font-weight:500;font-size:.68rem;color:var(--muted);letter-spacing:.06em}
+nav ul{display:flex;gap:26px;list-style:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--gold)}
+.nav-cta{display:inline-flex}
+.burger{display:none;background:none;border:0;font-size:1.8rem;color:var(--green-d);cursor:pointer}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,rgba(19,74,40,.96),rgba(31,107,58,.92)),url('images/hair-cleanser.jpg') center/cover;color:#fff;padding:70px 0 80px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2rem,5vw,3.3rem);margin-bottom:16px}
+.hero h1 span{color:var(--gold)}
+.hero p{color:#dcebe1;font-size:1.08rem;max-width:520px;margin-bottom:26px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.stats{display:flex;gap:30px;flex-wrap:wrap}
+.stats div b{display:block;font-size:1.6rem;color:var(--gold)}
+.stats div span{font-size:.82rem;color:#cfe3d6}
+.hero-img{position:relative}
+.hero-img img{border-radius:24px;box-shadow:0 25px 60px rgba(0,0,0,.4);border:4px solid rgba(255,255,255,.18)}
+.badge{position:absolute;left:-14px;bottom:24px;background:#fff;color:var(--green-d);padding:10px 16px;border-radius:14px;font-weight:700;font-size:.85rem;box-shadow:var(--shadow)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-img{position:relative}
+.about-img img{border-radius:var(--radius);box-shadow:var(--shadow)}
+.about-img::after{content:"";position:absolute;inset:auto -12px -12px auto;width:60%;height:60%;border:3px solid var(--gold);border-radius:var(--radius);z-index:-1}
+.ticks{list-style:none;margin:20px 0 26px}
+.ticks li{padding-left:30px;position:relative;margin-bottom:10px}
+.ticks li::before{content:"✓";position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;font-size:.75rem;display:grid;place-items:center;margin-top:3px}
+
+/* PRODUCTS */
+.bg-green{background:var(--green-l)}
+.grid{display:grid;gap:22px;margin-top:38px}
+.products{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);transition:.25s;border:1px solid rgba(0,0,0,.04)}
+.card:hover{transform:translateY(-6px)}
+.card .ico{width:54px;height:54px;border-radius:16px;background:var(--green-l);display:grid;place-items:center;font-size:1.7rem;margin-bottom:14px}
+.card h3{font-size:1.12rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem;margin-bottom:16px}
+.card .link{font-weight:700;color:var(--green);font-size:.92rem}
+.card .link:hover{color:var(--gold)}
+.tag{display:inline-block;font-size:.7rem;font-weight:700;background:var(--gold-l);color:#7a5a08;padding:3px 10px;border-radius:99px;margin-bottom:10px}
+
+/* FEATURED POSTERS */
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:38px}
+.poster{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.poster img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.poster.tall img{aspect-ratio:4/5}
+.poster .cap{padding:18px 22px}
+.poster .cap h3{font-size:1.1rem}
+.poster .cap p{color:var(--muted);font-size:.9rem;margin:4px 0 12px}
+
+/* WHY */
+.why{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.why .card{text-align:center}
+.why .ico{margin-inline:auto}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
+.gallery img{border-radius:var(--radius);width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;box-shadow:var(--shadow);cursor:zoom-in;transition:.25s}
+.gallery img:hover{transform:scale(1.02)}
+
+/* STEPS */
+.steps{grid-template-columns:repeat(auto-fit,minmax(210px,1fr));counter-reset:s}
+.step{position:relative;padding:26px 22px 22px;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);counter-increment:s}
+.step::before{content:counter(s);position:absolute;top:-16px;left:22px;width:36px;height:36px;border-radius:50%;background:var(--gold);color:#2a1d00;font-weight:800;display:grid;place-items:center}
+.step h3{font-size:1.05rem;margin-bottom:4px}
+.step p{color:var(--muted);font-size:.92rem}
+
+/* ENQUIRY */
+.enq{background:linear-gradient(135deg,var(--green-d),var(--green));color:#fff}
+.enq h2{color:#fff}
+.enq-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.enq .lead{color:#d6e8dc}
+.contact-list{list-style:none;margin-top:24px}
+.contact-list li{display:flex;gap:14px;align-items:center;margin-bottom:16px}
+.contact-list .ci{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:1.3rem;flex:none}
+.contact-list small{display:block;color:#bcd6c5;font-size:.76rem}
+.contact-list a{font-weight:700}
+form{background:#fff;color:var(--ink);padding:28px;border-radius:var(--radius);box-shadow:0 20px 50px rgba(0,0,0,.25)}
+form h3{margin-bottom:16px}
+.field{margin-bottom:14px}
+label{display:block;font-size:.84rem;font-weight:600;margin-bottom:5px;color:var(--green-d)}
+input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid #d6ddd8;border-radius:12px;font:inherit;background:#fafcfb;transition:.2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(31,107,58,.15)}
+textarea{min-height:90px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .btn{width:100%;justify-content:center}
+.note{font-size:.76rem;color:var(--muted);margin-top:10px;text-align:center}
+#thanks{display:none;margin-top:12px;padding:12px;border-radius:12px;background:var(--green-l);color:var(--green-d);font-weight:600;text-align:center}
+
+/* SOCIAL */
+.social{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:28px}
+.social a{display:flex;align-items:center;gap:10px;padding:14px 24px;border-radius:14px;background:#fff;box-shadow:var(--shadow);font-weight:700;transition:.2s}
+.social a:hover{transform:translateY(-3px)}
+.social small{display:block;font-weight:500;color:var(--muted);font-size:.74rem}
+
+/* FOOTER */
+footer{background:#0e2e1a;color:#b8cfc0;padding:42px 0 100px;font-size:.88rem}
+.foot{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start}
+footer h4{color:#fff;margin-bottom:8px}
+footer .disc{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);font-size:.78rem;color:#8fae9b}
+
+/* FLOATING */
+.float{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:60}
+.float a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.3);transition:.2s}
+.float a:hover{transform:scale(1.1)}
+.f-wa{background:#25d366}.f-call{background:var(--gold);color:#2a1d00!important}
+
+/* LIGHTBOX */
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;place-items:center;z-index:100;padding:20px;cursor:zoom-out}
+#lb.on{display:grid}
+#lb img{max-height:92vh;max-width:96vw;border-radius:12px}
+
+/* RESPONSIVE */
+@media(max-width:860px){
+  section{padding:54px 0}
+  .hero-grid,.about-grid,.enq-grid,.feat{grid-template-columns:1fr}
+  .hero-img{order:-1;max-width:420px;margin-inline:auto}
+  .badge{left:8px}
+  .about-img::after{display:none}
+  .burger{display:block}
+  .nav-cta{display:none}
+  nav ul{position:absolute;top:64px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:6px 4%;display:none;box-shadow:0 12px 20px rgba(0,0,0,.08)}
+  nav ul.open{display:flex}
+  nav ul li a{display:block;padding:13px 0;border-bottom:1px solid #eee}
+  .row{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .stats{gap:22px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="brand">
+      <span class="logo">✚</span>
+      <span>Firoj Khan<small>ASCLEPIUS WELLNESS</small></span>
+    </a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#enquiry">Enquiry</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+919838856672" class="btn btn-primary nav-cta">📞 Call Now</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--gold-l)">🌿 Asclepius Wellness · Empowering Wellness</span>
+      <h1>Health &amp; Wellness Products, <span>Delivered with Trust</span></h1>
+      <p>Hi, I'm Firoj Khan. I help families get genuine Asclepius wellness products, SNISS Herbal personal care and WellRoot juices. Message me for product details, availability and joining the team.</p>
+      <div class="hero-btns">
+        <a class="btn btn-wa" href="https://wa.me/919838856672?text=Hello%20Firoj%20Khan%2C%20I%20want%20product%20details." target="_blank" rel="noopener">💬 WhatsApp Me</a>
+        <a class="btn btn-outline" href="#enquiry">Send Enquiry</a>
+      </div>
+      <div class="stats">
+        <div><b>43+</b><span>Instagram Posts</span></div>
+        <div><b>264</b><span>Followers</span></div>
+        <div><b>10+</b><span>Products Available</span></div>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/hair-cleanser.jpg" alt="SNISS Herbal EXE Hair Cleanser with Firoj Khan" width="600" height="600">
+      <div class="badge">✅ Available now · Call for success</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="about-img">
+      <img src="images/stock-1.jpg" alt="Asclepius wellness products in stock" loading="lazy">
+    </div>
+    <div>
+      <span class="eyebrow">About Me</span>
+      <h2>Your local contact for Asclepius Wellness</h2>
+      <p class="lead">I work with Asclepius Wellness to bring health &amp; wellness products straight to people who need them, with honest guidance and quick support over call or WhatsApp.</p>
+      <ul class="ticks">
+        <li>Products in stock and ready to dispatch</li>
+        <li>Direct help on call, WhatsApp or Instagram DM</li>
+        <li>Herbal personal care from SNISS Herbal</li>
+        <li>Open invitation to join the Asclepius team</li>
+      </ul>
+      <a href="#enquiry" class="btn btn-primary">Ask About Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="bg-green">
+  <div class="container">
+    <div class="center">
+      <span class="eyebrow">Our Range</span>
+      <h2>Products Available</h2>
+      <p class="lead">A selection of what I currently stock. Message me for the full list, usage details and pricing.</p>
+    </div>
+    <div class="grid products">
+      <div class="card"><div class="ico">🔥</div><span class="tag">Asclepius</span><h3>Thunderblast</h3><p>Asclepius wellness product. Ask for ingredients and usage details.</p><a class="link" href="#enquiry" data-product="Asclepius Thunderblast">Enquire →</a></div>
+      <div class="card"><div class="ico">🫀</div><span class="tag">Asclepius</span><h3>LivoDOC</h3><p>Asclepius wellness product for daily care. Ask for full details.</p><a class="link" href="#enquiry" data-product="Asclepius LivoDOC">Enquire →</a></div>
+      <div class="card"><div class="ico">🦴</div><span class="tag">Asclepius</span><h3>Joint &amp; Mobility Care</h3><p>Asclepius range for active, comfortable movement. Packs in stock.</p><a class="link" href="#enquiry" data-product="Asclepius Joint Care">Enquire →</a></div>
+      <div class="card"><div class="ico">🍊</div><span class="tag">WellRoot</span><h3>SeabuckDOC Juice</h3><p>Sea buckthorn juice from the WellRoot range.</p><a class="link" href="#enquiry" data-product="WellRoot SeabuckDOC Juice">Enquire →</a></div>
+      <div class="card"><div class="ico">🫐</div><span class="tag">WellRoot</span><h3>BerryDOC Juice</h3><p>Mixed berry juice from the WellRoot range.</p><a class="link" href="#enquiry" data-product="WellRoot BerryDOC Juice">Enquire →</a></div>
+      <div class="card"><div class="ico">🌿</div><span class="tag">SNISS Herbal</span><h3>Herbal Personal Care</h3><p>Hair cleanser, face cream and more from SNISS Herbal.</p><a class="link" href="#enquiry" data-product="SNISS Herbal range">Enquire →</a></div>
+    </div>
+
+    <div class="feat">
+      <div class="poster">
+        <img src="images/hair-cleanser.jpg" alt="SNISS Herbal EXE Hair Cleanser" loading="lazy">
+        <div class="cap">
+          <span class="tag">SNISS Herbal</span>
+          <h3>EXE Hair Cleanser</h3>
+          <p>Herbal hair cleanser with Shikakai and Bhringraj for a healthy scalp. 100 mL.</p>
+          <a class="link" style="font-weight:700;color:var(--green)" href="#enquiry" data-product="SNISS EXE Hair Cleanser">Enquire about this →</a>
+        </div>
+      </div>
+      <div class="poster tall">
+        <img src="images/face-cream.jpg" alt="SNISS Herbal All Day Glow face cream" loading="lazy">
+        <div class="cap">
+          <span class="tag">SNISS Herbal</span>
+          <h3>All Day Glow Face Cream</h3>
+          <p>Brightening face cream with olive oil &amp; grapeseed extract. For dry to normal sensitive skin. 50 g.</p>
+          <a class="link" style="font-weight:700;color:var(--green)" href="#enquiry" data-product="SNISS All Day Glow Face Cream">Enquire about this →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section>
+  <div class="container center">
+    <span class="eyebrow">Why Choose Us</span>
+    <h2>Simple, honest and easy to reach</h2>
+    <div class="grid why">
+      <div class="card"><div class="ico">📦</div><h3>Ready Stock</h3><p>Products available now, no long waiting.</p></div>
+      <div class="card"><div class="ico">📞</div><h3>Direct Support</h3><p>Talk to me directly on call or WhatsApp.</p></div>
+      <div class="card"><div class="ico">🌿</div><h3>Herbal Care</h3><p>SNISS Herbal range for hair and skin.</p></div>
+      <div class="card"><div class="ico">🤝</div><h3>Join the Team</h3><p>Interested in Asclepius? Ask how to join.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="bg-green">
+  <div class="container center">
+    <span class="eyebrow">Gallery</span>
+    <h2>Stock &amp; Products</h2>
+    <p class="lead">A look at the products currently available. Tap an image to enlarge.</p>
+    <div class="gallery">
+      <img src="images/stock-1.jpg" alt="Asclepius, WellRoot and SNISS products stacked" loading="lazy">
+      <img src="images/stock-2.jpg" alt="Product stock display" loading="lazy">
+      <img src="images/hair-cleanser.jpg" alt="SNISS EXE Hair Cleanser" loading="lazy">
+      <img src="images/face-cream.jpg" alt="SNISS All Day Glow face cream" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section>
+  <div class="container center">
+    <span class="eyebrow">How It Works</span>
+    <h2>Getting your product is easy</h2>
+    <div class="grid steps" style="margin-top:46px">
+      <div class="step"><h3>Send Enquiry</h3><p>Fill the form, call or DM on Instagram.</p></div>
+      <div class="step"><h3>Get Details</h3><p>I share product info, usage and price.</p></div>
+      <div class="step"><h3>Confirm Order</h3><p>Choose what you need and confirm.</p></div>
+      <div class="step"><h3>Receive</h3><p>Get your products delivered to you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRY -->
+<section id="enquiry" class="enq">
+  <div class="container enq-grid">
+    <div>
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Send an enquiry</h2>
+      <p class="lead">Tell me what you are looking for and I will get back to you quickly. Your enquiry opens directly in WhatsApp.</p>
+      <ul class="contact-list">
+        <li><span class="ci">📞</span><div><small>Phone / WhatsApp</small><a href="tel:+919838856672">+91 98388 56672</a></div></li>
+        <li><span class="ci">📷</span><div><small>Instagram</small><a href="https://www.instagram.com/firojkhan_awpl/" target="_blank" rel="noopener">@firojkhan_awpl</a></div></li>
+        <li><span class="ci">▶️</span><div><small>YouTube</small><a href="https://www.youtube.com/@FirojKhan-su7ob" target="_blank" rel="noopener">@FirojKhan-su7ob</a></div></li>
+      </ul>
+    </div>
+    <form id="enqForm">
+      <h3>Product Enquiry</h3>
+      <div class="row">
+        <div class="field"><label for="name">Your Name</label><input id="name" required placeholder="Full name"></div>
+        <div class="field"><label for="phone">Mobile Number</label><input id="phone" type="tel" required pattern="[0-9+\s\-]{10,15}" placeholder="10-digit number"></div>
+      </div>
+      <div class="field"><label for="city">City</label><input id="city" placeholder="Your city"></div>
+      <div class="field"><label for="product">Interested In</label>
+        <select id="product">
+          <option>General enquiry</option>
+          <option>Asclepius Thunderblast</option>
+          <option>Asclepius LivoDOC</option>
+          <option>Asclepius Joint Care</option>
+          <option>WellRoot SeabuckDOC Juice</option>
+          <option>WellRoot BerryDOC Juice</option>
+          <option>SNISS EXE Hair Cleanser</option>
+          <option>SNISS All Day Glow Face Cream</option>
+          <option>SNISS Herbal range</option>
+          <option>Joining Asclepius team</option>
+        </select>
+      </div>
+      <div class="field"><label for="msg">Message</label><textarea id="msg" placeholder="Write your question here..."></textarea></div>
+      <button class="btn btn-wa" type="submit">💬 Send on WhatsApp</button>
+      <div id="thanks">Thank you! WhatsApp is opening with your enquiry.</div>
+      <p class="note">Demo form: your enquiry opens in WhatsApp and is sent to Firoj Khan.</p>
+    </form>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section>
+  <div class="container center">
+    <span class="eyebrow">Follow &amp; Join</span>
+    <h2>Stay connected</h2>
+    <p class="lead">Follow for product updates, offers and wellness tips. DM for details and join us.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/firojkhan_awpl/" target="_blank" rel="noopener">📷 <span>Instagram<small>264 followers</small></span></a>
+      <a href="https://www.youtube.com/@FirojKhan-su7ob" target="_blank" rel="noopener">▶️ <span>YouTube<small>@FirojKhan-su7ob</small></span></a>
+      <a href="https://wa.me/919838856672" target="_blank" rel="noopener">💬 <span>WhatsApp<small>9838856672</small></span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div><h4>Firoj Khan · Asclepius Wellness</h4><p>Health &amp; wellness products available.<br>📞 +91 98388 56672</p></div>
+      <div><h4>Quick Links</h4><p><a href="#about">About</a> · <a href="#products">Products</a> · <a href="#gallery">Gallery</a> · <a href="#enquiry">Enquiry</a></p></div>
+    </div>
+    <p class="disc">Disclaimer: Wellness and herbal products are not intended to diagnose, treat, cure or prevent any disease. Results vary from person to person. Please consult a qualified doctor before use, especially if you have a medical condition. Brand names belong to their respective owners. This is an independent distributor page.</p>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="f-wa" href="https://wa.me/919838856672?text=Hello%20Firoj%20Khan%2C%20I%20want%20product%20details." target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <a class="f-call" href="tel:+919838856672" aria-label="Call">📞</a>
+</div>
+
+<div id="lb"><img alt=""></div>
+
+<script>
+  // mobile menu
+  const menu=document.getElementById('menu');
+  document.getElementById('burger').onclick=()=>menu.classList.toggle('open');
+  menu.querySelectorAll('a').forEach(a=>a.onclick=()=>menu.classList.remove('open'));
+
+  // product "Enquire" links preselect product
+  document.querySelectorAll('[data-product]').forEach(a=>{
+    a.addEventListener('click',()=>{
+      const sel=document.getElementById('product');
+      for(const o of sel.options){ if(o.text===a.dataset.product){sel.value=o.text;break;} }
+    });
+  });
+
+  // enquiry -> WhatsApp
+  document.getElementById('enqForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const v=id=>document.getElementById(id).value.trim();
+    const text=`Hello Firoj Khan,%0A%0A*New Enquiry*%0AName: ${encodeURIComponent(v('name'))}%0APhone: ${encodeURIComponent(v('phone'))}%0ACity: ${encodeURIComponent(v('city')||'-')}%0AInterested in: ${encodeURIComponent(v('product'))}%0AMessage: ${encodeURIComponent(v('msg')||'-')}`;
+    document.getElementById('thanks').style.display='block';
+    window.open(`https://wa.me/919838856672?text=${text}`,'_blank');
+    e.target.reset();
+  });
+
+  // lightbox
+  const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+  document.querySelectorAll('.gallery img').forEach(i=>i.onclick=()=>{lbi.src=i.src;lb.classList.add('on')});
+  lb.onclick=()=>lb.classList.remove('on');
+</script>
+</body>
+</html>
